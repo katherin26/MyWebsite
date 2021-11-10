@@ -17,8 +17,8 @@
   }
 
   &__background {
-    //background-color: $color-white; //color white
-    opacity: 0.5;
+    // background-color: $color-white; //color white
+    opacity: 0.9;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -46,9 +46,8 @@
 
   &__list {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    //transform:translate(-50%,-50%);
     list-style: none;
     text-align: center;
     width: 100%;

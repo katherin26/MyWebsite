@@ -1,11 +1,12 @@
 .content-view {
-  //border: 2px solid red;
   background-color: transparent;
   width: 60rem;
   height: 20rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: absolute;
+  top: 18rem;
 }
 
 .overview {

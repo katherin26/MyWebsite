@@ -1,0 +1,12 @@
+.header {
+  color: white;
+  font-size: 4rem;
+
+  &__logo-box {
+    position: absolute;
+    top: 1.8rem;
+    left: 4rem;
+    height: 8rem;
+    width: 9rem;
+  }
+}
