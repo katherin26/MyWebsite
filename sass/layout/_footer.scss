@@ -10,11 +10,10 @@ body {
 .footer {
   background-color: $color-transparent;
   font-size: 3.4rem;
-  color: color-white;
+  color: $color-white;
   position: fixed;
   width: 100rem;
   height: 12rem;
-
   bottom: 2rem;
 
   &__logo-box {
@@ -47,8 +46,8 @@ body {
 
     &:hover,
     &:active {
-      color: $color-primary-dark;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2); //NOTE TO MY SELF: CHANGE THE COLOR OF THE BOX.
+      color: $color-secondary;
+      box-shadow: 0 1rem 2rem rgba($color-secondary, 0.2); //NOTE TO MY SELF: CHANGE THE COLOR OF THE BOX.
       transform: rotate(5deg) scale(1.3);
     }
   }

@@ -21,7 +21,10 @@ body {
     no-repeat center/cover fixed;
   //color: #000;*/
 
-  background-image: linear-gradient(rgba(#101d2c, 0.8), rgba(#101d2c, 0.8)),
+  background-image: linear-gradient(
+      rgba($color-primary, 0.7),
+      rgba($color-primary, 0.7)
+    ),
     url(https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmlnaHQlMjBza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
   background-size: cover;
   background-position: center;

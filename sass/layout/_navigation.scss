@@ -18,7 +18,7 @@
 
   &__background {
     // background-color: $color-white; //color white
-    opacity: 0.9;
+    opacity: 0.5;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -26,8 +26,8 @@
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient(
-      $color-primary-light,
-      $color-primary-dark
+      $color-primary-dark,
+      $color-primary
     ); // background del circulo.
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -64,14 +64,14 @@
       font-size: 2rem;
       font-weight: 100;
       padding: 1rem 2rem;
-      color: $color-white;
+      color: $color-secondary;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
         120deg,
         transparent 0%,
         transparent 50%,
-        $color-white 50%
+        $color-secondary 50%
       );
       background-size: 220%;
       transition: all 0.4s;
@@ -107,7 +107,7 @@
     &::after {
       width: 3rem;
       height: 2px;
-      background-color: $color-grey-dark; //color white
+      background-color: $color-secondary; //color white
       display: inline-block;
     }
     &::before,
