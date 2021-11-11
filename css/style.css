@@ -73,7 +73,9 @@ body {
   background-position: center;
   line-height: 1.6;
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Bad Script', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Josefin Slab', serif;
   overflow: hidden; }
 
 .container {
@@ -173,11 +175,11 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 0.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.8rem rgba(225, 180, 119, 0.1);
   cursor: pointer; }
 
 .navigation__background {
-  opacity: 0.5;
+  opacity: 1;
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -211,7 +213,7 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 100;
   padding: 1rem 2rem;
   color: #e1b477;
@@ -306,6 +308,6 @@ h3 {
   z-index: -1;
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
-  background-image: linear-gradient(to top left, #fff, #e1b477); }
+  background-image: linear-gradient(to top left, #2d4355, #dabb91); }
 
 /*--------------------------------------------------*/

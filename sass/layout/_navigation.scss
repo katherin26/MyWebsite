@@ -12,13 +12,13 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 0.8rem rgba($color-black, 0.1);
+    box-shadow: 0 0.8rem rgba($color-secondary, 0.1);
     cursor: pointer;
   }
 
   &__background {
     // background-color: $color-white; //color white
-    opacity: 0.5;
+    opacity: 1;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -61,7 +61,7 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 100;
       padding: 1rem 2rem;
       color: $color-secondary;

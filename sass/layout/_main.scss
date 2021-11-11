@@ -41,7 +41,7 @@ h3 {
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: linear-gradient(
     to top left,
-    $color-white,
-    $color-secondary
+    $color-primary-dark,
+    $color-secondary-light
   );
 }
