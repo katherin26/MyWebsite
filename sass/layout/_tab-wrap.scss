@@ -1,5 +1,3 @@
-$num-of-tabs: 4;
-
 @mixin tabs {
   @for $i from 1 through $num-of-tabs {
     &:nth-of-type(#{$i}) {
