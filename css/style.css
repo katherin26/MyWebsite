@@ -115,20 +115,13 @@ body {
     animation: pulsate 1s infinite; }
 
 /*--------------------------------------------------*/
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  padding: 3rem; }
-
 .footer {
   background-color: rgba(0, 0, 0, 0);
   font-size: 3.4rem;
   color: #fff;
   position: fixed;
   width: 50rem;
-  height: 8rem;
+  height: 7rem;
   bottom: 1rem; }
   .footer__logo-box {
     text-align: center; }
