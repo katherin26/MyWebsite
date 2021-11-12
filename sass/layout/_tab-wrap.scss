@@ -1,16 +1,16 @@
 .tab-title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 600;
   background: $color-white;
   opacity: 0.5;
   color: $color-secondary;
-  padding: 8px 0 50px 0;
+  padding: 5px 0 30px 0;
   margin-bottom: 50px;
   width: 80%;
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 8.8rem;
+  top: 8rem;
 }
 
 .tab-wrap {
@@ -18,7 +18,7 @@
   //margin-left: 20%;
   position: relative;
   display: flex;
-  top: 18rem;
+  top: 15.8rem;
 }
 
 input[type='radio'][name='tabs'] {
@@ -40,7 +40,9 @@ input[type='radio'][name='tabs'] {
         position: absolute;
         top: 29px;
         width: 100%;
-        height: 15rem;
+        height: 21rem;
+        display: flex;
+        flex-direction: row;
       }
     }
   }
@@ -67,7 +69,7 @@ label {
   height: 3rem;
   transition: color 0.2s ease;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -88,9 +90,12 @@ label {
     position: absolute;
     top: 100px;
     left: 0px;
-    line-height: 230%;
+    line-height: 210%;
     display: none;
-    padding: 0 2rem 0 2rem;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 }
 
@@ -103,4 +108,12 @@ label {
     margin-left: 10%;
     top: -106px;
   }
+}
+
+.fotokt {
+  height: 9.8rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  margin: 2.5rem 1rem 0 0;
 }
