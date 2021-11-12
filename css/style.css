@@ -146,10 +146,19 @@ body {
 
 .header {
   color: white;
-  font-size: 4rem; }
+  font-size: 3.5rem;
+  width: 100%;
+  border: 2px solid red;
+  position: absolute;
+  top: 0.1rem; }
   .header__logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 1.8rem;
+    border: 2px solid pink;
+    border-radius: 50%;
+    top: 0.1rem;
     left: 4rem;
     height: 8rem;
     width: 9rem; }
@@ -162,8 +171,8 @@ body {
   height: 6.8rem;
   width: 6.8rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 3.8rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 0.8rem rgba(225, 180, 119, 0.1);
@@ -171,8 +180,8 @@ body {
 
 .navigation__background {
   opacity: 1;
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
