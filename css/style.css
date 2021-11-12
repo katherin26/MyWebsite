@@ -308,16 +308,18 @@ h3 {
     background-image: linear-gradient(to top left, #2d4355, #dabb91); }
 
 .tab-title {
-  font-size: 26px;
+  font-size: 4rem;
+  font-weight: 600;
   background: #fff;
-  opacity: 0.7;
+  opacity: 0.5;
   color: #e1b477;
-  padding: 8px 0 50px 20%;
+  padding: 8px 0 50px 0;
   margin-bottom: 50px;
   width: 80%;
   position: absolute;
   display: flex;
-  top: 11rem; }
+  justify-content: center;
+  top: 8.8rem; }
 
 .tab-wrap {
   width: 80%;
@@ -327,15 +329,17 @@ h3 {
 
 input[type='radio'][name='tabs'] {
   position: absolute;
-  z-index: -1;
+  z-index: 1000;
   display: none; }
   input[type='radio'][name='tabs']:checked + .tab-label-content label {
-    color: #e1b477; }
+    color: #e1b477;
+    font-size: 1.8rem;
+    font-weight: bold; }
   input[type='radio'][name='tabs']:checked + .tab-label-content .tab-content {
     display: block;
     background-color: white;
-    opacity: 0.9;
-    color: #e1b477;
+    opacity: 0.8;
+    color: #101d2c;
     position: absolute;
     top: 29px;
     width: 100%;
@@ -355,7 +359,7 @@ label {
   cursor: pointer;
   color: #101d2c;
   background-color: #fff;
-  opacity: 0.5;
+  opacity: 0.6;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -363,12 +367,14 @@ label {
   text-align: center;
   height: 3rem;
   transition: color 0.2s ease;
-  width: 100%; }
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold; }
 
 .slide {
   background: #e1b477;
   width: calc(100% / 4);
-  height: 4px;
+  height: 3px;
   position: absolute;
   left: 0;
   top: calc(100% - 4px);
@@ -381,7 +387,8 @@ label {
     top: 100px;
     left: 0px;
     line-height: 230%;
-    display: none; }
+    display: none;
+    padding: 0 2rem 0 2rem; }
 
 @media screen and (max-width: 800px) {
   .tab-title {

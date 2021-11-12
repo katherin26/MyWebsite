@@ -1,26 +1,16 @@
-@mixin tabs {
-  @for $i from 1 through $num-of-tabs {
-    &:nth-of-type(#{$i}) {
-      &:checked {
-        ~ .slide {
-          left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
-        }
-      }
-    }
-  }
-}
-
 .tab-title {
-  font-size: 26px;
+  font-size: 4rem;
+  font-weight: 600;
   background: $color-white;
-  opacity: 0.7;
+  opacity: 0.5;
   color: $color-secondary;
-  padding: 8px 0 50px 20%;
+  padding: 8px 0 50px 0;
   margin-bottom: 50px;
   width: 80%;
   position: absolute;
   display: flex;
-  top: 11rem;
+  justify-content: center;
+  top: 8.8rem;
 }
 
 .tab-wrap {
@@ -33,18 +23,20 @@
 
 input[type='radio'][name='tabs'] {
   position: absolute;
-  z-index: -1;
+  z-index: 1000;
   display: none;
   &:checked {
     + .tab-label-content {
       label {
         color: $color-secondary;
+        font-size: 1.8rem;
+        font-weight: bold;
       }
       .tab-content {
         display: block;
         background-color: white;
-        opacity: 0.9;
-        color: $color-secondary;
+        opacity: 0.8;
+        color: $color-primary;
         position: absolute;
         top: 29px;
         width: 100%;
@@ -66,7 +58,7 @@ label {
   cursor: pointer;
   color: $color-primary;
   background-color: $color-white;
-  opacity: 0.5;
+  opacity: 0.6;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -75,12 +67,14 @@ label {
   height: 3rem;
   transition: color 0.2s ease;
   width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .slide {
   background: $color-secondary;
   width: calc(100% / #{$num-of-tabs});
-  height: 4px;
+  height: 3px;
   position: absolute;
   left: 0;
   top: calc(100% - 4px);
@@ -96,6 +90,7 @@ label {
     left: 0px;
     line-height: 230%;
     display: none;
+    padding: 0 2rem 0 2rem;
   }
 }
 
