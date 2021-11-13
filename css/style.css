@@ -319,7 +319,8 @@ h3 {
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 8rem; }
+  top: 8rem;
+  text-shadow: 1px 1px #adabab; }
 
 .tab-wrap {
   width: 80%;
@@ -371,7 +372,8 @@ label {
   transition: color 0.2s ease;
   width: 100%;
   font-size: 1.8rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-shadow: 1px 1px #adabab; }
 
 .slide {
   background: #e1b477;
@@ -408,6 +410,7 @@ label {
   width: 9.4rem;
   border-radius: 50%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  margin: 2.5rem 1rem 0 0; }
+  margin: 2.5rem 1rem 0 0;
+  box-shadow: 0 0.8rem rgba(225, 180, 119, 0.1); }
 
 /*--------------------------------------------------*/
