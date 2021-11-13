@@ -114,6 +114,32 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+.btn__header {
+  position: fixed;
+  top: 3.8rem;
+  right: 4rem;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 3.4rem; }
+  .btn__header a {
+    text-decoration: none;
+    color: #fff; }
+    .btn__header a:link, .btn__header a:visited {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0);
+      display: inline-block;
+      transition: all 0.2s; }
+    .btn__header a:hover, .btn__header a:active {
+      color: #e1b477;
+      box-shadow: 0 1rem 2rem rgba(225, 180, 119, 0.2);
+      transform: rotate(5deg) scale(1.3); }
+
 /*--------------------------------------------------*/
 .footer {
   background-color: rgba(0, 0, 0, 0);
@@ -156,7 +182,10 @@ body {
   font-size: 3.5rem;
   width: 100%;
   position: absolute;
-  top: 0.1rem; }
+  top: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between; }
   .header__logo-box {
     display: flex;
     align-items: center;

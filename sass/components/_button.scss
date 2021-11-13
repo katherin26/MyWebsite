@@ -34,3 +34,38 @@
     animation: pulsate 1s infinite;
   }
 }
+
+//Btn dashboard
+.btn__header {
+  position: fixed;
+  top: 3.8rem;
+  right: 4rem;
+  border: none;
+  color: $color-white;
+  font-size: $default-font-size;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 3.4rem;
+
+  & a {
+    text-decoration: none;
+    color: $color-white;
+    &:link,
+    &:visited {
+      color: $color-white;
+      background-color: $color-transparent;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+      box-shadow: 0 1rem 2rem rgba($color-secondary, 0.2); //NOTE TO MY SELF: CHANGE THE COLOR OF THE BOX.
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+}
