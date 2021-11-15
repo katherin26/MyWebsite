@@ -11,14 +11,9 @@
   cursor: pointer;
   transition: all 0.2s;
 
-  @include respond(tab-port) {
-    //border: 2px solid orange;
+  @include respond(big-desktop) {
     font-size: 2rem;
   }
-  /*
-  @include respond(tab-land) {
-    font-size: 2.2rem;
-  }*/
 
   & a {
     text-decoration: none;

@@ -64,15 +64,18 @@
 html {
   font-size: 62.5%;
   height: 100%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 100%; } }
+  @media only screen and (max-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box;
@@ -92,14 +95,12 @@ body {
   font-family: 'Cinzel', serif;
   font-family: 'Josefin Slab', serif;
   overflow: hidden; }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      padding: 1.5rem; } }
 
 .container {
   display: flex;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 /*--------------------------------------------------*/
 .btn-inline {
@@ -111,12 +112,8 @@ body {
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.2s;
-  /*
-  @include respond(tab-land) {
-    font-size: 2.2rem;
-  }*/ }
-  @media only screen and (max-width: 56.25em) {
+  transition: all 0.2s; }
+  @media only screen and (min-width: 112.5em) {
     .btn-inline {
       font-size: 2rem; } }
   .btn-inline a {
@@ -169,9 +166,6 @@ body {
   width: 50rem;
   height: 7rem;
   bottom: 1rem; }
-  @media only screen and (max-width: 56.25em) {
-    .footer {
-      bottom: 3rem; } }
   .footer__logo-box {
     text-align: center;
     display: flex;
@@ -199,9 +193,6 @@ body {
   color: white;
   bottom: 0.8rem;
   position: fixed; }
-  @media only screen and (max-width: 56.25em) {
-    .copyright {
-      font-size: 1rem; } }
 
 /*.header {
   color: white;
@@ -396,7 +387,6 @@ body {
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .overview__title {
-  position: relative;
   top: 17rem;
   display: flex;
   flex-direction: column;
@@ -406,19 +396,20 @@ body {
   justify-content: center;
   color: #fff;
   /*
+  @include respond(phone) {
+    positon: relative;
+    top: */
+  /*
   @include respond(tab-land) {
     top: 30rem;
-  }*/
-  /*@include respond(big-desktop) {
-    top: 20rem;
   }*/ }
-  @media only screen and (max-width: 37.5em) {
-    .overview__title {
-      positon: relative;
-      top: 10rem; } }
   @media only screen and (max-width: 56.25em) {
     .overview__title {
-      top: 30rem; } }
+      top: 38rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .overview__title {
+      top: 20rem;
+      font-size: 28rem; } }
 
 h1,
 span {
@@ -428,14 +419,6 @@ span {
   @include respond(tab-land) {
     font-size: 3.8rem;
   }*/ }
-  @media only screen and (max-width: 56.25em) {
-    h1,
-    span {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    h1,
-    span {
-      font-size: 3rem; } }
 
 h3 {
   padding-top: 2rem;
@@ -446,12 +429,6 @@ h3 {
   @include respond(tab-land) {
     font-size: 3.2rem;
   }*/ }
-  @media only screen and (max-width: 56.25em) {
-    h3 {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    h3 {
-      font-size: 3rem; } }
 
 .highlight {
   position: relative; }
