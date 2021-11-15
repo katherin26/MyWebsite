@@ -38,8 +38,8 @@
 //Btn dashboard
 .btn__header {
   position: fixed;
-  top: 3.8rem;
-  right: 4rem;
+  top: 5.3rem;
+  right: 5.9rem;
   border: none;
   color: $color-white;
   font-size: $default-font-size;
@@ -49,6 +49,7 @@
   cursor: pointer;
   transition: all 0.2s;
   font-size: 3.4rem;
+  z-index: 2000;
 
   & a {
     text-decoration: none;
