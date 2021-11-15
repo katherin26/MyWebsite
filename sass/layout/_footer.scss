@@ -6,6 +6,10 @@
   width: 50rem;
   height: 7rem;
   bottom: 1rem;
+  @include respond(tab-port) {
+    //border: 2px solid orange;
+    bottom: 3rem;
+  }
 
   &__logo-box {
     text-align: center;
@@ -50,4 +54,8 @@
   color: white;
   bottom: 0.8rem;
   position: fixed;
+  @include respond(tab-port) {
+    //border: 2px solid orange;
+    font-size: 1rem;
+  }
 }

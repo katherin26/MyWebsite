@@ -9,6 +9,20 @@
 html {
   font-size: 62.5%;
   height: 100%;
+
+  @include respond(tab-land) {
+    //1 rem = 9px, 9/16=56.25%
+    font-size: 56.25%; //width < 1200 ?
+  }
+  @include respond(tab-port) {
+    //1 rem = 8px, 8/16=50%
+    font-size: 50%; //width < 900?
+  }
+
+  @include respond(big-desktop) {
+    //1 rem = 12px, 12/16=75%
+    font-size: 75%;
+  }
 }
 
 body {
@@ -34,6 +48,10 @@ body {
   font-family: 'Cinzel', serif;
   font-family: 'Josefin Slab', serif;
   overflow: hidden;
+
+  @include respond(tab-port) {
+    padding: 1.5rem;
+  }
 }
 
 .container {
