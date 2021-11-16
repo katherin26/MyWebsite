@@ -221,7 +221,7 @@ label {
   h1 {
     text-align: center;
     color: $color-white;
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -250,6 +250,7 @@ label {
 
     h2 {
       text-align: center;
+      font-size: inherit;
     }
   }
 }
@@ -329,7 +330,7 @@ label {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   z-index: 3000;
 
   & a {

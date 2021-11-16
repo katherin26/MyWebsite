@@ -629,7 +629,7 @@ label {
   .main-container h1 {
     text-align: center;
     color: #fff;
-    font-size: 5rem; }
+    font-size: 3.5rem; }
 
 .about-section {
   border-bottom: 1px solid #e1b477;
@@ -651,7 +651,8 @@ label {
     align-items: center;
     flex-direction: column; }
     .about-section__paragraph h2 {
-      text-align: center; }
+      text-align: center;
+      font-size: inherit; }
 
 .fotokt {
   height: 9.8rem;
@@ -705,7 +706,7 @@ label {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   z-index: 3000; }
   .btn2__header a {
     text-decoration: none;
