@@ -102,6 +102,10 @@ body {
   position: relative;
   height: 100vh; }
 
+h1,
+h2 {
+  text-shadow: 1.5px 1.5px #adabab; }
+
 /*--------------------------------------------------*/
 .btn-inline {
   border: none;
@@ -624,8 +628,23 @@ label {
 .main-container {
   max-height: 44.5rem;
   overflow: scroll;
+  overflow-x: hidden;
   top: 10rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .main-container::-webkit-scrollbar {
+    width: 2px; }
+  .main-container::-webkit-scrollbar-track {
+    box-shadow: rgba(0, 0, 0, 0);
+    border-radius: 10px; }
+  .main-container::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px; }
+  .main-container::-webkit-scrollbar-thumb:hover {
+    background: #e1b477; }
   .main-container h1 {
     text-align: center;
     color: #fff;

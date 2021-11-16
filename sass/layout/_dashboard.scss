@@ -215,8 +215,32 @@ label {
   //border: 2px solid red;
   max-height: 44.5rem;
   overflow: scroll;
+  overflow-x: hidden;
   top: 10rem;
   font-size: 2rem;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: $color-transparent;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $color-white;
+
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-secondary;
+  }
 
   h1 {
     text-align: center;
