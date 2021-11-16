@@ -135,9 +135,7 @@ body {
   top: 5.3rem;
   right: 5.9rem;
   border: none;
-  color: #fff;
   font-size: 1.6rem;
-  padding-bottom: 2px;
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
@@ -156,6 +154,9 @@ body {
       color: #e1b477;
       box-shadow: 0 1rem 2rem rgba(225, 180, 119, 0.2);
       transform: rotate(5deg) scale(1.3); }
+  @media only screen and (max-width: 37.5em) {
+    .btn__header {
+      font-size: 2rem; } }
 
 /*--------------------------------------------------*/
 .footer {
