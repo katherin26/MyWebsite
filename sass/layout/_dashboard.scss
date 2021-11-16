@@ -262,7 +262,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
   }
 
   &__paragraph {
@@ -282,12 +282,12 @@ label {
 }
 
 .fotokt {
-  height: 16rem;
+  height: 19rem;
   width: 16rem;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  //padding: 5px;
-  border: 2px solid red;
+  padding: 5px;
+  border: 0.5px solid white;
 }
 
 .footer2 {

@@ -661,8 +661,7 @@ label {
     padding: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 2px solid yellow; }
+    align-items: center; }
   .about-section__paragraph {
     width: 50%;
     text-align: justify;
@@ -676,11 +675,12 @@ label {
       font-size: inherit; }
 
 .fotokt {
-  height: 16rem;
+  height: 19rem;
   width: 16rem;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  border: 2px solid red; }
+  padding: 5px;
+  border: 0.5px solid white; }
 
 .footer2 {
   background-color: rgba(0, 0, 0, 0);
