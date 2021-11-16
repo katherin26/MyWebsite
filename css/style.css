@@ -358,6 +358,7 @@ body {
     display: none; }
   .navigation__button {
     background-color: #fff;
+    opacity: 0.7;
     height: 6.8rem;
     width: 6.8rem;
     position: fixed;
@@ -556,7 +557,6 @@ label {
   height: 100vh; }
 
 .navigation-container {
-  border: 2px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -567,37 +567,50 @@ label {
   height: 6.8rem;
   width: 6.8rem;
   z-index: 2000;
-  border: 2px solid red;
-  left: 4rem;
-  top: 3.2rem; }
+  display: flex;
+  align-items: center; }
   .header2__logo-box {
-    left: 4rem;
+    left: 4.5rem;
     height: 5rem;
     width: 6rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    font-size: 4.5rem; }
+    font-size: 4.5rem;
+    padding: 0 0 0 0.5rem; }
 
 .navigation2 {
-  border: 2px solid yellow;
-  height: 7.8rem;
+  height: 7rem;
   width: 7.4rem;
   display: flex;
   justify-content: center;
   align-content: center;
   position: absolute;
   top: 3.2rem;
-  right: 4rem; }
-  .navigation2__checkbox {
-    display: none; }
+  right: 4rem;
+  /*
+  &__background {
+    //background-color: $color-white; //color white
+    opacity: 1;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(
+      $color-primary-dark,
+      $color-primary
+    ); // background del circulo.
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }*/ }
   .navigation2__button {
     background-color: #fff;
+    opacity: 0.7;
     height: 6.6rem;
     width: 7.8rem;
-    border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 0.8rem rgba(225, 180, 119, 0.1);
     cursor: pointer; }
     @media only screen and (max-width: 56.25em) {
       .navigation2__button {
@@ -607,20 +620,8 @@ label {
       .navigation2__button {
         top: 3rem;
         right: 3rem; } }
-  .navigation2__background {
-    opacity: 1;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: radial-gradient(#2d4355, #101d2c);
-    z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .main-container {
-  border: 2px solid red;
   max-height: 44.5rem;
   overflow: scroll;
   top: 10rem;
@@ -699,7 +700,7 @@ label {
   top: 1.3rem;
   position: absolute;
   border: none;
-  color: #e1b477;
+  color: #fff;
   font-size: 1.6rem;
   background-color: transparent;
   cursor: pointer;
@@ -708,9 +709,9 @@ label {
   z-index: 3000; }
   .btn2__header a {
     text-decoration: none;
-    color: #e1b477; }
+    color: #fff; }
     .btn2__header a:link, .btn2__header a:visited {
-      color: #e1b477;
+      color: #fff;
       background-color: rgba(0, 0, 0, 0);
       display: inline-block;
       transition: all 0.2s; }
