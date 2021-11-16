@@ -631,6 +631,7 @@ label {
   overflow-x: hidden;
   top: 10rem;
   font-size: 2rem;
+  z-index: 4000;
   /* width */
   /* Track */
   /* Handle */
@@ -649,13 +650,19 @@ label {
     text-align: center;
     color: #fff;
     font-size: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .main-container {
+      max-height: 69.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-container {
+      max-height: 44rem; } }
 
 .about-section {
   border-bottom: 1px solid #e1b477;
   display: flex;
   width: 100%;
   color: #fff;
-  padding: 0 1.5rem 0 1.5rem; }
+  padding: 1.5rem; }
   .about-section__img {
     width: 50%;
     padding: 5px;
@@ -672,7 +679,17 @@ label {
     flex-direction: column; }
     .about-section__paragraph h2 {
       text-align: center;
-      font-size: inherit; }
+      font-size: inherit;
+      padding: 0 0 1rem 0;
+      text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .about-section__paragraph {
+        width: 100%;
+        padding: 0; } }
 
 .fotokt {
   height: 19rem;
