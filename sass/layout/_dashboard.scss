@@ -1,0 +1,309 @@
+/*.tab-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  background: $color-white;
+  opacity: 0.5;
+  color: $color-secondary;
+  padding: 5px 0 30px 0;
+  margin-bottom: 50px;
+  width: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 8rem;
+  text-shadow: 1px 1px $color-grey-light;
+}
+
+.tab-wrap {
+  width: 80%;
+  //margin-left: 20%;
+  position: relative;
+  display: flex;
+  top: 14rem;
+}
+
+input[type='radio'][name='tabs'] {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  &:checked {
+    + .tab-label-content {
+      label {
+        color: $color-secondary;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .tab-content {
+        display: block;
+        background-color: white;
+        opacity: 0.8;
+        color: $color-primary;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 21rem;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  @include tabs;
+  &:first-of-type {
+    &:checked {
+      ~ .slide {
+        left: 0;
+      }
+    }
+  }
+}
+
+label {
+  cursor: pointer;
+  color: $color-primary;
+  background-color: $color-white;
+  opacity: 0.6;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 3rem;
+  transition: color 0.2s ease;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px $color-grey-light;
+}
+
+.slide {
+  background: $color-secondary;
+  width: calc(100% / #{$num-of-tabs});
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  transition: left 0.3s ease-out;
+}
+
+.tab-label-content {
+  width: 100%;
+
+  .tab-content {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    line-height: 210%;
+    display: none;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tab-title {
+    padding: 25px 0 70px 10%;
+  }
+  .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
+
+.fotokt {
+  height: 9.8rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  margin: 2.5rem 1rem 0 0;
+  box-shadow: 0 0.8rem rgba($color-secondary, 0.1);
+}
+*/
+
+//CSS
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navigation-container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header2 {
+  color: white;
+  height: 6.8rem;
+  width: 6.8rem;
+  top: 3.2rem;
+  left: 4rem;
+  z-index: 2000;
+  //border: 2px solid red;
+
+  &__logo-box {
+    left: 4rem;
+    height: 5rem;
+    width: 6rem;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    font-size: 4.5rem;
+  }
+}
+
+.navigation2 {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-white; // boton menu color azul
+    height: 6.8rem;
+    width: 6.8rem;
+    top: 3.8rem;
+    right: 4rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 0.8rem rgba($color-secondary, 0.1);
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
+  }
+
+  &__background {
+    //background-color: $color-white; //color white
+    opacity: 1;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(
+      $color-primary-dark,
+      $color-primary
+    ); // background del circulo.
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+.main-container {
+  border: 2px solid red;
+  max-height: 80vh;
+  overflow: scroll;
+  top: 10rem;
+  font-size: 2rem;
+
+  h1 {
+    text-align: center;
+    color: $color-white;
+    font-size: 5rem;
+  }
+}
+
+.about-section {
+  border-bottom: 1px solid $color-secondary;
+  display: flex;
+  width: 100%;
+  color: $color-white;
+
+  &__img {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__paragraph {
+    width: 50%;
+    text-align: justify;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.fotokt {
+  height: 9.8rem;
+  width: 9.4rem;
+  border-radius: 50%;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  //padding: 5px;
+}
+
+.footer2 {
+  background-color: $color-transparent;
+  font-size: 3.4rem;
+  color: $color-white;
+  width: 100%;
+  height: 7rem;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+
+  &__logo-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__navigation {
+    padding-top: 1rem;
+    display: inline-block;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      background-color: $color-transparent;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+      box-shadow: 0 1rem 2rem rgba($color-secondary, 0.2); //NOTE TO MY SELF: CHANGE THE COLOR OF THE BOX.
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+}
+
+.copyright {
+  color: white;
+  bottom: 0.8rem;
+  position: fixed;
+}

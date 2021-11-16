@@ -27,80 +27,45 @@
   </head>
 
   <body>
-    <div class="container">
-      <!--Navigation start
-      
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-  
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About Me</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Projects</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-   
-      Navigation end-->
-    
-      <!--HEADER--------------------------------------------------------------------->
-      <header class="header">
-        <div class="header__logo-box">
-          <div class="header__logo-box"><i class="fab fa-odnoklassniki"></i></div>
+    <div class="container2">
+      <div class="navigation-container">
+        <header class="header2">
+          <div class="header2__logo-box">
+            <div class="header2__logo-box">
+              <i class="fab fa-odnoklassniki"></i>
+            </div>
+          </div>
+        </header>
+
+        <div class="navigation2">
+          <input
+            type="checkbox"
+            class="navigation2__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation2__button">
+            <span class="navigation2__icon">&nbsp;</span>
+          </label>
+          <div class="navigation2__background">&nbsp;</div>
+
+          <button class="btn2__header">
+            <a href="index.html"><i class="fas fa-angle-double-left"></i></a>
+          </button>
         </div>
-      </header>
-
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-
-        <button class="btn__header" >
-          <a href="index.html"><i class="fas fa-angle-double-left"></i></a>
-        </button>
-        <!--Este va a estar vacio asi que ponemos el &nbsp; que significa espacio en blanco-->
-        <!--
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About Me</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Projects</a>
-            </li>
-          </ul>
-        </nav>
-        -->
       </div>
 
-      <!--header-->
-
-      <!--Main Tabs start-->
-
-      <div class="tab-title">Portfolio</div>
-
-      <div class="tab-wrap">
-        <!--1 Tab-->
-        <input type="radio" name="tabs" id="tab1" checked />
-        <div class="tab-label-content" id="tab1-content">
-         
-          <label for="tab1">About Me</label>
-          <div class="tab-content">
+      <main class="main-container">
+        <h1>Portfolio</h1>
+        <div class="about-section">
+          <div class="about-section__img">
             <img
               src="https://i.pinimg.com/originals/97/c6/8e/97c68eaefcb7420d1fd0452657b81317.jpg"
               alt="User 1"
               class="fotokt"
             />
+          </div>
+          <div class="about-section__paragraph">
+            <h2>ABOUT ME</h2>
             My name is Katherin Ochoa. I started coding as a hobby, then I
             studied formally to become a web developer. I love programming and
             solving problems that arise in the day-to-day of this industry. I
@@ -109,105 +74,103 @@
             use.
           </div>
         </div>
-        <!--2 Tab-->
-        <input type="radio" name="tabs" id="tab2" />
-        <div class="tab-label-content" id="tab2-content">
-          <label for="tab2">Css</label>
-          <div class="tab-content">
-            <p>
-              <ul>
-              <li>Layouts = Flexbox, Grid and positioning.</li>
-              <li>Animations = @Keyframes and transitions.</li>
-              <li>Css architecture = Sass, Component-based design, BEM, writing reusable code.</li>
-              <li>Responsive design = Media queries, mobile-first and desktop-first desktop, using em, rem, px , %, vh units.</li>
-            </ul>
-            </p>
+
+        <div class="about-section">
+          <div class="about-section__paragraph">
+            My name is Katherin Ochoa. I started coding as a hobby, then I
+            studied formally to become a web developer. I love programming and
+            solving problems that arise in the day-to-day of this industry. I
+            enjoy reading about new design techniques and programming paradigms
+            as well as planning and building my own applications for personal
+            use.
           </div>
-        </div>
-        <!--3 Tab-->
-        <input type="radio" name="tabs" id="tab3" />
-        <div class="tab-label-content" id="tab3-content">
-          <label for="tab3">Javascript</label>
-          <div class="tab-content">
-            <ul>
-              <li>
-                Fundamentals = Data structures and operators, strings , arrays, objects etc..
-              </li>
-              <li>
-                Modern OOP = Classes, constructors, prototypal inheritance, encapsulation, ES6 modules.
-              </li>
-              <li>Asynchronous Javascript = Event Loop, promises, async/await, AJAX calls and APIs.</li>
-              <li>Tools = NPM, VSC, GitHub, Parcel, Babel, Netlify.</li>
-              <li>Libraries/Frameworks = React, Material UI, Jest, Tailwind, Bulma, Bootstrap.</li>
-            </ul>
-          </div>
-        </div>
-          <!--4 Tab-->
-        <input type="radio" name="tabs" id="tab4" />
-        <div class="tab-label-content" id="tab4-content">
-          <label for="tab4">Projects</label>
-          <div class="tab-content">
-            <ul>
-           <li>Wc-app = React Project using APIs and Bulma</li>
-           <li>Pet-Note = React Project using tailwind.</li>
-           <li>Zelda-Game = Game using canvas.</li>
-           <li>Guess My Number = Project using Css vanilla y @keyframes</li> 
-           <li>Dice-Game = Project using Css vanilla and @keyframes</li> 
-          </ul>
-           
+          <div class="about-section__img">
+            <img src="alt" ="User 1" class="fotokt" />
           </div>
         </div>
 
-        <!--5 Tab-->
-        <input type="radio" name="tabs" id="tab5" />
-        <div class="tab-label-content" id="tab5-content">
-          <label for="tab5">Studies</label>
-          <div class="tab-content">
-            <ul>
-              <li>
-                 CS50's Introduction to computer science, Miami Dade College (2020)
-              </li>
-              <li>
-                 Web Development Bootcamp, Ironhack (2020)  
-              </li>
-              <li>Advanced CSS and Sass: FLexbox,Grid, Animations and More, Udemy (2021) </li>
-              <li>The complete Javascript Course 2021, Udemy (2021)</li>
-              <li>Convert caffeine to code, Home University (1992-2021)</li>
-            </ul>
+        <div class="about-section">
+          <div class="about-section__img">
+            <img src="alt" ="User 1" class="fotokt" />
+          </div>
+          <div class="about-section__paragraph">
+            My name is Katherin Ochoa. I started coding as a hobby, then I
+            studied formally to become a web developer. I love programming and
+            solving problems that arise in the day-to-day of this industry. I
+            enjoy reading about new design techniques and programming paradigms
+            as well as planning and building my own applications for personal
+            use.
           </div>
         </div>
-          <!--Slide-->
-        <div class="slide"></div>
-      </div>
 
-      <!--End main-Tabs-->
+        <div class="about-section">
+          <div class="about-section__paragraph">
+            My name is Katherin Ochoa. I started coding as a hobby, then I
+            studied formally to become a web developer. I love programming and
+            solving problems that arise in the day-to-day of this industry. I
+            enjoy reading about new design techniques and programming paradigms
+            as well as planning and building my own applications for personal
+            use.
+          </div>
+          <div class="about-section__img">
+            <img src="alt" ="User 1" class="fotokt" />
+          </div>
+        </div>
 
-      <!--Footer start-->
-      <footer class="footer">
-        <div class="footer__logo-box">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="" class="footer__link"
+        <div class="about-section">
+          <div class="about-section__img">
+            <img src="alt" ="User 1" class="fotokt" />
+          </div>
+          <div class="about-section__paragraph">
+            My name is Katherin Ochoa. I started coding as a hobby, then I
+            studied formally to become a web developer. I love programming and
+            solving problems that arise in the day-to-day of this industry. I
+            enjoy reading about new design techniques and programming paradigms
+            as well as planning and building my own applications for personal
+            use.
+          </div>
+        </div>
+
+        <div class="about-section">
+          <div class="about-section__img">
+            <img src="alt" ="User 1" class="fotokt" />
+          </div>
+          <div class="about-section__paragraph">
+            My name is Katherin Ochoa. I started coding as a hobby, then I
+            studied formally to become a web developer. I love programming and
+            solving problems that arise in the day-to-day of this industry. I
+            enjoy reading about new design techniques and programming paradigms
+            as well as planning and building my own applications for personal
+            use.
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer2">
+        <div class="footer2__logo-box">
+          <div class="footer2__navigation">
+            <ul class="footer2__list">
+              <li class="footer2__item">
+                <a href="" class="footer2__link"
                   ><i class="fab fa-github"></i
                 ></a>
               </li>
-              <li class="footer__item">
-                <a href="" class="footer__link"
+              <li class="footer2__item">
+                <a href="" class="footer2__link"
                   ><i class="fab fa-linkedin"></i
                 ></a>
               </li>
-              <li class="footer__item">
-                <a href="" class="footer__link"
+              <li class="footer2__item">
+                <a href="" class="footer2__link"
                   ><i class="fab fa-codepen"></i>
                 </a>
               </li>
-              <li class="footer__item">
+              <li class="footer2__item">
                 <a href="" class="footer__link"
                   ><i class="far fa-envelope"></i
                 ></a>
               </li>
-              <li class="footer__item">
+              <li class="footer2__item">
                 <a href="" class="footer__link"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
@@ -216,9 +179,11 @@
           </div>
         </div>
       </footer>
-      <!--Footer End-->
-      <div class = "copyright"><i class="far fa-copyright"></i><strong>Ko Portafolio Created by Katherin Ochoa
-        2021</strong></div>
+
+      <div class="copyright2">
+        <i class="far fa-copyright"></i
+        ><strong>Ko Portafolio Created by Katherin Ochoa 2021</strong>
+      </div>
     </div>
   </body>
 </html>
