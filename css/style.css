@@ -106,6 +106,21 @@ h1,
 h2 {
   text-shadow: 1.5px 1.5px #adabab; }
 
+h1,
+span {
+  font-size: 3rem;
+  line-height: 1.3; }
+  @media only screen and (max-width: 37.5em) {
+    h1,
+    span {
+      font-size: 2.4rem; } }
+
+h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px #adabab; }
+
 /*--------------------------------------------------*/
 .btn-inline {
   border: none;
@@ -401,21 +416,6 @@ h2 {
   align-content: center;
   justify-content: center;
   color: #fff; }
-
-h1,
-span {
-  font-size: 3rem;
-  line-height: 1.3; }
-  @media only screen and (max-width: 37.5em) {
-    h1,
-    span {
-      font-size: 2.4rem; } }
-
-h3 {
-  padding-top: 2rem;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 0.5px 0.5px #adabab; }
 
 .highlight {
   position: relative; }
