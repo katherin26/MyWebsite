@@ -12,7 +12,7 @@
   }
 }
 
-//Positioning
+//Positioning and media queries
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
