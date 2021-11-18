@@ -138,7 +138,7 @@ label {
 }
 
 .header2 {
-  color: white;
+  color: $color-white;
   height: 6.8rem;
   width: 6.8rem;
   z-index: 2000;
@@ -222,7 +222,7 @@ label {
 
   /* width */
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 1px;
   }
 
   /* Track */
@@ -259,7 +259,7 @@ label {
 }
 
 .about-section {
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: 0.1rem solid $color-secondary;
   display: flex;
   width: 100%;
   color: $color-white;
@@ -308,7 +308,7 @@ label {
   border-radius: 5%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 5px;
-  border-bottom: 0.5px solid $color-secondary;
+  border-bottom: 0.1px solid $color-secondary;
 }
 
 .footer2 {

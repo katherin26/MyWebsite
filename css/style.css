@@ -331,7 +331,7 @@ label {
   height: 10vh; }
 
 .header2 {
-  color: white;
+  color: #fff;
   height: 6.8rem;
   width: 6.8rem;
   z-index: 2000;
@@ -401,7 +401,7 @@ label {
   /* Handle */
   /* Handle on hover */ }
   .main-container::-webkit-scrollbar {
-    width: 2px; }
+    width: 1px; }
   .main-container::-webkit-scrollbar-track {
     box-shadow: rgba(0, 0, 0, 0);
     border-radius: 10px; }
@@ -422,7 +422,7 @@ label {
       max-height: 53rem; } }
 
 .about-section {
-  border-bottom: 1px solid #e1b477;
+  border-bottom: 0.1rem solid #e1b477;
   display: flex;
   width: 100%;
   color: #fff;
@@ -461,7 +461,7 @@ label {
   border-radius: 5%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 5px;
-  border-bottom: 0.5px solid #e1b477; }
+  border-bottom: 0.1px solid #e1b477; }
 
 .footer2 {
   background-color: rgba(0, 0, 0, 0);
