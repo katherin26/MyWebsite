@@ -78,3 +78,31 @@
     font-size: 2rem;
   }
 }
+
+.button-sites {
+  color: $color-secondary;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+  padding-bottom: 2px;
+  text-decoration: none;
+
+  & .fa-link {
+    font-size: 1rem;
+  }
+
+  a {
+    border: none;
+
+    &:link,
+    &:visited {
+      color: $color-secondary;
+      background-color: $color-transparent;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+  }
+
+  &:hover {
+    color: $color-white;
+  }
+}

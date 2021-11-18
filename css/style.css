@@ -177,6 +177,24 @@ body {
     .btn__header {
       font-size: 2rem; } }
 
+.button-sites {
+  color: #e1b477;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+  padding-bottom: 2px;
+  text-decoration: none; }
+  .button-sites .fa-link {
+    font-size: 1rem; }
+  .button-sites a {
+    border: none; }
+    .button-sites a:link, .button-sites a:visited {
+      color: #e1b477;
+      background-color: rgba(0, 0, 0, 0);
+      display: inline-block;
+      transition: all 0.2s; }
+  .button-sites:hover {
+    color: #fff; }
+
 /*--------------------------------------------------*/
 /*.tab-title {
   font-size: 4.5rem;
